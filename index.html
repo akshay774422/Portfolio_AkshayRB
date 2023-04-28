@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48ad32fa38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo" > -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                <ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Akshay</span> <br> Badgujar From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/img.jpg"  alt=""></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me">"Hello, my name is Akshay Badgujar, and I'm a full-stack web developer. I'm currently studying in my 3rd year of Computer Engineering at R.C. Patel Institute of Technology in Shirpur.
+                        I have a passion for building responsive and dynamic websites that deliver an exceptional user experience. My skills in HTML, CSS, JavaScript, and various web development frameworks allow me to create modern and functional websites that meet the needs of clients and users alike.
+                        During my studies, I've worked on several projects, including a team-based e-commerce website and a personal portfolio site. These projects have given me valuable experience in both front-end and back-end development, as well as project management and collaboration.
+                        What sets me apart as a developer is my attention to detail and my ability to think creatively to solve problems. I approach each project with a focus on user experience and functionality, and I'm always striving to learn and improve my skills.
+                        In my free time, I enjoy exploring new technologies."</p>
+                    <div class="tab-titiles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Basic / Core / Advance</li>
+                            <li><span>Web development</span><br>Creating and Designing websites</li>
+                            <li><span>Servlet/jsp</span><br>Developing Web Application using Servlet/jsp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current Parsuing</span><br>Computer Engineering from RCPIT Shirpur</li>
+                            <li><span>2022 - 2022</span><br>Internship in Developing Web Application using Servlet/jsp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Parsuing B-Tech Degree in Computer Engineering from RCPIT Shirpur</li>
+                            <li><span>2020</span><br>HSC from M. H. S. S. Highschool Shindkheda</li>
+                            <li><span>2018</span><br>SSC from Janta Highschool Shindkheda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Web Design</h2>
+                    <p>Services typically involve designing, developing, and maintaining websites and web applications for businesses or individuals. These services may include creating a custom website from scratch, redesigning an existing website</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-regular fa-file-code"></i>
+                    <h2>Web Application</h2>
+                    <p>Services typically involve designing the web application architecture, developing the front-end user interface, implementing business logic and data access functionality, and integrating the application with databases</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-code"></i>
+                    <h2>###</h2>
+                    <p>description for web design service</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Web Banking Application</h3>
+                        <p>In this projects there are 2 main modules Admin and Customer. Admin can
+                            create and delete customer account, verify customer request such as
+                            amount deposit and withdraw, while Customer can deposit and withdraw
+                            amount from account.
+                            </p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Vehicle CNG Booking Web Application</h3>
+                        <p>This In this project there are 3 main modules Admin, CNG Pump and User
+                            where Admin can Approve and delete the CNG Pump from the list. CNG
+                            Pump owner get all the bookings done by users as user can Book the CNG
+                            by selecting respective city, taluka and area.
+                            </p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Medical Help Desc Web Application</h3>
+                        <p>A medical help system application is designed to provide users with information about hospitals and healthcare facilities in their area. The application typically includes a database of hospitals and their services, feedback from patients, ratings, and government schemes related to healthcare.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>badgujarakshay21@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/akshay-badgujar-64475a228/"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/akshay774422"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.instagram.com/badgujar628/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                    </div>
+                    <a href="images/ak_cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Akshay Badgujar <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxpNoJayH3OBWMzqW3s2Eq6dg5_W21vK_w4vzm5YycJcHcUW5JPk3SlMuybhDTsxSMt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
